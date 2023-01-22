@@ -57,13 +57,13 @@
 		<repository>
 			<id>nexus-releases</id>
 			<name>Releases</name>
-			<url>https://aurora.sm0tnt.com/repository/maven-releases/</url>
+			<url>${env.MAVEN_REPO}/maven-releases/</url>
 		</repository>
 
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Snapshot</name>
-			<url>https://aurora.sm0tnt.com/repository/maven-snapshots/</url>
+			<url>${env.MAVEN_REPO}/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
