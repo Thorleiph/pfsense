@@ -13,6 +13,8 @@
 		<junit.version>4.11</junit.version>
 		<jackson.version>2.14.1</jackson.version>
 		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<log4j.version>2.17.2</log4j.version>
+		<javaslang.version>2.0.6</javaslang.version>
 		<iptools.version>1.0-SNAPSHOT</iptools.version>
 	</properties>
 
@@ -22,6 +24,18 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
 		</dependency>
 
 		<dependency>
@@ -40,6 +54,12 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>${commons-lang3.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.javaslang</groupId>
+			<artifactId>javaslang</artifactId>
+			<version>${javaslang.version}</version>
 		</dependency>
 
 		<dependency>
